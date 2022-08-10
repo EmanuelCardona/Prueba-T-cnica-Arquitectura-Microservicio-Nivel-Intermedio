@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "174b5d7e-c5dd-4943-ad9d-fd6f3a516b74",
+		"name": "Prueba Técnica - Desarrollo Back",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21621668"
+	},
+	"item": [
+		{
+			"name": "Crear cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"estado\": \"True\",\r\n        \"tipocuenta\": \"Ahorro\",\r\n        \"numerocuenta\": 151256,\r\n        \"saldoinicial\": 20\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/cuenta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuenta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"contraseña\": \"juan\",\r\n        \"estado\": \"True\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/cliente/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cliente",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 1,\r\n        \"nombre\": \"Emanuel\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 22.0,\r\n        \"port\": 49891\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/personas/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"personas",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear movimientos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"movimiento\": \"Prueba de creacion\",\r\n        \"tipomovimiento\": \"Ahorro\",\r\n        \"valor\": 2000,\r\n        \"saldo\": 2000,\r\n        \"fecha\": \"2019-02-10T05:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/movimientos/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"movimientos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar datos cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/cuenta/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuenta",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar datos persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/personas/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"personas",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar datos movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/movimientos/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"movimientos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar datos cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/cliente/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cliente",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar cuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"estado\": \"false\",\r\n        \"tipocuenta\": \"Ahorro\",\r\n        \"numerocuenta\": 478758.0,\r\n        \"saldoinicial\": 2000.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/cuenta/editar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuenta",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"contraseña\": \"8124\",\r\n        \"estado\": \"True\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/cliente/editar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cliente",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"nombre\": \"Emanuel\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 25\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/personas/editar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"personas",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar movimiento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"movimiento\": \"Actualizacion de movimiento\",\r\n        \"tipomovimiento\": \"Ahorro\",\r\n        \"valor\": 20000,\r\n        \"saldo\": 20,\r\n        \"fecha\": \"2019-02-10T05:00:00.000+00:00\",\r\n        \"port\": 64315\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/movimientos/editar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"movimientos",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar movimiento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/movimientos/eliminar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"movimientos",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/cliente/eliminar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cliente",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/personas/eliminar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"personas",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar cuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/cuenta/eliminar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuenta",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

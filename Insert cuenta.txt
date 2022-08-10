@@ -1,0 +1,3 @@
+insert into cuenta (estado,numerocuenta,saldoinicial,tipocuenta) values ('True','478758','2000','Ahorro');	
+insert into cuenta (estado,numerocuenta,saldoinicial,tipocuenta) values ('True','225487','100','Corriente');
+
